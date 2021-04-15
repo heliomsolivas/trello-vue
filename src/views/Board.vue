@@ -1,6 +1,6 @@
 <template>
   <div class="board">
-        <h1 class="flex py-2">Trello Vuezada</h1>
+    <h1 class="flex py-2">Trello Vuezada</h1>
     <div class="flex flex-row items-start">
       <BoardColumn
         v-for="(column, $columnIndex) of board.columns"
