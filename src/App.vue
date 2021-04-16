@@ -1,18 +1,27 @@
 <template>
   <div id="app">
-    <router-view/>
+    <AppTopNav />
+    <router-view />
   </div>
 </template>
 
-<style>
-@import 'assets/styles/tailwind.postcss';
+<script>
+import AppTopNav from "@/components/AppTopNav";
+export default {
+  components: { AppTopNav }
+};
+</script>
 
-body, html {
+<style>
+@import "assets/styles/tailwind.postcss";
+
+body,
+html {
   height: 100%;
 }
 
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
